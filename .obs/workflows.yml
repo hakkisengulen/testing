@@ -1,18 +1,5 @@
----
-pr:
+workflow:
   steps:
-  - configure_repositories:
-      project: home:erturkbf:apktest
-      repositories:
-      - name: Alpine_Tes_main
-        paths:
-        - target_project: Alpine:Latest
-          target_repository: main
-        - target_project: home:erturkbf
-          target_repository: Alpine_Tes_main
-        architectures: [ x86_64 ]
-  filters:
-    event: push
     - set_flags:
         flags:
           - type: build
@@ -21,6 +8,4 @@ pr:
           - type: publish
             status: disable
             project: home:erturkbf:apktest
-
-
 
