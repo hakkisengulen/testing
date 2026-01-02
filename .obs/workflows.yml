@@ -1,12 +1,7 @@
-workflow:
+rebuild_master:
   steps:
-    - set_flags:
-        flags:
-          - type: build
-            status: enable
-            project: home:erturkbf:apktest:attr
-          - type: publish
-            status: disable
-            project: home:erturkbf:apktest:attr
+    - rebuild_package:
+        project: home:Admin
+        package: ctris
   filters:
     event: push
