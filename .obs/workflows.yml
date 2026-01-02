@@ -1,7 +1,7 @@
 rebuild_master:
   steps:
     - rebuild_package:
-        project: home:Admin
-        package: ctris
+        project: home:erturkbf:apktest
+        package: acl
   filters:
     event: push
