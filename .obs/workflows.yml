@@ -1,16 +1,11 @@
-workflow:
+---
+pr:
   steps:
-    - trigger_services:
-        project: home:erturkbf
-        package: testing
-        repositories:
-          - name: apktest
-        paths:
-          - target_project: Alpine:Latest/main
-            target_repository: Alpine_Tes_main
-            architectures:
-              - x86_64
+  - branch_package:
+      source_project: Alpine:Latest:main
+      target_project: home:erturkbf:testing:Alpine_Tes_main
+      architectures:
+       - x86_64
   filters:
-    event: tag_push
-
+    event: push
 
