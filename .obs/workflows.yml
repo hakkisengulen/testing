@@ -13,10 +13,14 @@ pr:
         architectures: [ x86_64 ]
   filters:
     event: push
-  filters:
-    labels:
-      only:
-        - APKBUILD
+    - set_flags:
+        flags:
+          - type: build
+            status: enable
+            project: home:erturkbf:apktest
+          - type: publish
+            status: disable
+            project: home:erturkbf:apktest
 
 
 
