@@ -1,12 +1,19 @@
 ---
 pr:
   steps:
-  - branch_package:
-      source_project: Alpine:Latest
-      source_package: apktest
-      target_project: home:erturkbf:testing:Alpine_Tes_main
-      architectures:
-       - x86_64
+  - configure_repositories:
+      project: home:erturkbf:apktest
+      repositories:
+      - name: Alpine_Tes_main
+        paths:
+        - target_project: Alpine:Latest
+          target_repository: main
+        - target_project: home:erturkbf
+          target_repository: Alpine_Tes_main
+        architectures: [ x86_64 ]
   filters:
     event: push
+
+
+
 
