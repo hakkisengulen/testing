@@ -13,7 +13,10 @@ pr:
         architectures: [ x86_64 ]
   filters:
     event: push
-
+  filters:
+    labels:
+      only:
+        - APKBUILD
 
 
 
