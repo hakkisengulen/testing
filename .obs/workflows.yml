@@ -2,7 +2,7 @@
 pr:
   steps:
   - branch_package:
-      source_project: Alpine:Latest:main
+      source_project: Alpine:Latest
       source_package: apktest
       target_project: home:erturkbf:testing:Alpine_Tes_main
       architectures:
