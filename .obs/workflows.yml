@@ -8,4 +8,5 @@ workflow:
           - type: publish
             status: disable
             project: home:erturkbf:apktest
-
+  filters:
+    event: push
