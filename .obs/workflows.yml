@@ -2,6 +2,6 @@ rebuild_master:
   steps:
     - rebuild_package:
         project: home:erturkbf:apktest
-        package: attre
+        package: attr
   filters:
     event: push
