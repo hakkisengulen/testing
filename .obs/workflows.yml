@@ -1,7 +1,7 @@
 rebuild_master:
   steps:
     - rebuild_package:
-        project: home:erturkbf:apktest
-        package: acl
+        project: home:erturkbf:testinggap
+        package: file
   filters:
     event: push
