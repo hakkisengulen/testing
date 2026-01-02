@@ -4,9 +4,9 @@ workflow:
         flags:
           - type: build
             status: enable
-            project: home:erturkbf:apktest
+            project: home:erturkbf:apktest:attr
           - type: publish
             status: disable
-            project: home:erturkbf:apktest
+            project: home:erturkbf:apktest:attr
   filters:
     event: push
