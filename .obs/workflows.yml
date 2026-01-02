@@ -3,8 +3,14 @@ workflow:
     - trigger_services:
         project: home:erturkbf
         package: testing
+        repositories:
+          - name: apktest
+        paths:
+          - target_project: Alpine:Latest/main
+            target_repository: Alpine_Tes_main
+            architectures:
+              - x86_64
   filters:
     event: tag_push
-
 
 
